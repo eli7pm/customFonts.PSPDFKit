@@ -1,4 +1,5 @@
 {
+  "homepage": "https://eli7pm.github.io/customFonts.PSPDFKit",
   "name": "pspdfkit-web-example-react",
   "version": "2022.2.0",
   "description": "Standalone and offline PDF viewer web application built with PSPDFKit for Web and React",
@@ -15,7 +16,6 @@
     "indexeddb"
   ],
   "author": "PSPDFKit (https://pspdfkit.com)",
-  "homepage": "https://pspdfkit.com",
   "license": "SEE LICENSE IN https://pspdfkit.com/legal/License.pdf",
   "readme": "https://pspdfkit.com/guides/web",
   "dependencies": {
@@ -31,6 +31,8 @@
     "verify-installation": "node scripts/verify-install.js && node scripts/copy-pspdfkit-files.js",
     "prestart": "npm run verify-installation",
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "prebuild": "npm run verify-installation",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,6 +40,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
+    "gh-pages": "^4.0.0",
     "ncp": "^2.0.0"
   },
   "browserslist": [
