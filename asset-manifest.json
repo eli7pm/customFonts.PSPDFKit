@@ -10,6 +10,7 @@
   },
   "entrypoints": [
     "static/css/main.a240c550.css",
-    "static/js/main.f0d631f5.js"
+    "static/js/main.f0d631f5.js",
+    "pspdfkit-lib/",
   ]
 }
